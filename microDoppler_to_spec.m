@@ -1,13 +1,4 @@
-%% Introduction
 
-% This script was used to simulate micro-Doppler effect signatures of three
-%  objects: pedestrian, helicopter, parked car.
-% Most of the simulation functions (beginning in line 145) were taken from 
-%  MATLAB's implementation of Introduction to Micro Doppler effects:
-%  https://www.mathworks.com/help/phased/examples/introduction-to-micro-doppler-effects.html
-%
-% The rest of the code was written by me and is under MIT License. 
-% If you have any questions, don't hesitate to get in touch. 
 
 %% Initial conditions
 %Parameters of interest
@@ -55,9 +46,9 @@ end
 
 %% The epic loop
 prf = 2e4; %pulse repeat frequency
-for x = [5 10] %vary starting x position
-    for y = [2 8] %vary starting y position
-        for z = [0 1] %vary starting z position
+for x = 15%[5 10 15] %vary starting x position
+    for y = 64%[2 8 64] %vary starting y position
+        for z = 2%[0 1] %vary starting z position
             for vx = [1 2]
                 for vy = [0 1]
                     for vz = [0 1]
